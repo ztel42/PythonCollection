@@ -1,0 +1,5 @@
+.env
+*.xlsx
+last_checked.txt
+__pycache__/
+.venv/

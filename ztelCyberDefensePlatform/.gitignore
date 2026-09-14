@@ -1,0 +1,7 @@
+honeygrid_agent.log
+unsent_logs.json
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
