@@ -1,0 +1,49 @@
+{
+  "value": [
+    {
+      "id": "bbbbbbbb-0002-0002-0002-000000000001",
+      "displayName": "Fresh Guest",
+      "userPrincipalName": "fresh_guest_fabrikam.com#EXT#@contoso.com",
+      "accountEnabled": true,
+      "createdDateTime": "2026-08-01T12:00:00Z",
+      "userType": "Guest",
+      "signInActivity": {
+        "lastSignInDateTime": "2026-09-10T08:00:00Z",
+        "lastSuccessfulSignInDateTime": "2026-09-10T08:00:00Z"
+      }
+    },
+    {
+      "id": "bbbbbbbb-0002-0002-0002-000000000002",
+      "displayName": "Stale Guest",
+      "userPrincipalName": "stale_guest_fabrikam.com#EXT#@contoso.com",
+      "accountEnabled": true,
+      "createdDateTime": "2024-01-15T12:00:00Z",
+      "userType": "Guest",
+      "signInActivity": {
+        "lastSignInDateTime": "2025-01-01T00:00:00Z",
+        "lastSuccessfulSignInDateTime": "2025-01-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "bbbbbbbb-0002-0002-0002-000000000003",
+      "displayName": "Disabled Guest",
+      "userPrincipalName": "disabled_guest_fabrikam.com#EXT#@contoso.com",
+      "accountEnabled": false,
+      "createdDateTime": "2023-06-01T12:00:00Z",
+      "userType": "Guest",
+      "signInActivity": {
+        "lastSignInDateTime": "2024-06-01T00:00:00Z",
+        "lastSuccessfulSignInDateTime": "2024-06-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "bbbbbbbb-0002-0002-0002-000000000004",
+      "displayName": "Never Signed In Guest",
+      "userPrincipalName": "never_guest_fabrikam.com#EXT#@contoso.com",
+      "accountEnabled": true,
+      "createdDateTime": "2025-12-01T12:00:00Z",
+      "userType": "Guest",
+      "signInActivity": {}
+    }
+  ]
+}

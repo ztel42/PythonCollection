@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "entra-hygiene"
+version = "1.0.0"
+description = "Read-only Microsoft Entra ID / Azure AD security hygiene checker"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Zach Telford" }]
+dependencies = [
+  "msal==1.31.1",
+  "requests==2.32.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5"]
+
+[project.scripts]
+entra-hygiene = "entra_hygiene.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["entra_hygiene*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

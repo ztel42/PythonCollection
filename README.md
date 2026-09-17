@@ -6,6 +6,7 @@ Each folder is a straight copy of the original repository. Project code and file
 
 | Project | Original repo |
 | --- | --- |
+| `EntraHygieneChecker` | *(new — lives in this collection)* https://github.com/ztel42/PythonCollection/tree/main/EntraHygieneChecker |
 | `FileIntegrityCheckerSHA256` | https://github.com/ztel42/FileIntegrityCheckerSHA256 |
 | `PythonCPUusageLogger` | https://github.com/ztel42/PythonCPUusageLogger |
 | `PythonSharePointAutoPull` | https://github.com/ztel42/PythonSharePointAutoPull |

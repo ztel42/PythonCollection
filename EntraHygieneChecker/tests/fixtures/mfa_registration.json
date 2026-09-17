@@ -1,0 +1,40 @@
+{
+  "value": [
+    {
+      "id": "aaaaaaaa-0001-0001-0001-000000000001",
+      "userPrincipalName": "alice@contoso.com",
+      "userDisplayName": "Alice Admin",
+      "userType": "member",
+      "isMfaRegistered": true,
+      "isMfaCapable": true,
+      "methodsRegistered": ["microsoftAuthenticatorPush", "softwareOneTimePasscode"]
+    },
+    {
+      "id": "aaaaaaaa-0001-0001-0001-000000000002",
+      "userPrincipalName": "bob@contoso.com",
+      "userDisplayName": "Bob NoMFA",
+      "userType": "member",
+      "isMfaRegistered": false,
+      "isMfaCapable": false,
+      "methodsRegistered": []
+    },
+    {
+      "id": "aaaaaaaa-0001-0001-0001-000000000003",
+      "userPrincipalName": "guest.user_fabrikam.com#EXT#@contoso.com",
+      "userDisplayName": "Guest User",
+      "userType": "guest",
+      "isMfaRegistered": false,
+      "isMfaCapable": false,
+      "methodsRegistered": []
+    },
+    {
+      "id": "aaaaaaaa-0001-0001-0001-000000000004",
+      "userPrincipalName": "carol@contoso.com",
+      "userDisplayName": "Carol Odd",
+      "userType": "member",
+      "isMfaRegistered": true,
+      "isMfaCapable": false,
+      "methodsRegistered": ["email"]
+    }
+  ]
+}

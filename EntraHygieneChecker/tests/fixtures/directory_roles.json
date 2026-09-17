@@ -1,0 +1,60 @@
+{
+  "roles": [
+    {
+      "id": "role-ga",
+      "displayName": "Global Administrator",
+      "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10",
+      "members": [
+        {
+          "id": "user-ga-1",
+          "userPrincipalName": "alice@contoso.com",
+          "displayName": "Alice Admin",
+          "@odata.type": "#microsoft.graph.user"
+        },
+        {
+          "id": "user-ga-2",
+          "userPrincipalName": "breakglass@contoso.com",
+          "displayName": "Break Glass",
+          "@odata.type": "#microsoft.graph.user"
+        }
+      ]
+    },
+    {
+      "id": "role-pra",
+      "displayName": "Privileged Role Administrator",
+      "roleTemplateId": "e8611ab8-c189-46e8-94e1-60213ab1f814",
+      "members": [
+        {
+          "id": "user-pra-1",
+          "userPrincipalName": "alice@contoso.com",
+          "displayName": "Alice Admin",
+          "@odata.type": "#microsoft.graph.user"
+        }
+      ]
+    },
+    {
+      "id": "role-app",
+      "displayName": "Application Administrator",
+      "roleTemplateId": "9b895d92-2cd3-44c7-9d02-a6f93c84b91f",
+      "members": [
+        {
+          "id": "sp-app-admin",
+          "displayName": "CI Deployer SP",
+          "@odata.type": "#microsoft.graph.servicePrincipal"
+        }
+      ]
+    },
+    {
+      "id": "role-ignored",
+      "displayName": "Reports Reader",
+      "roleTemplateId": "4a5d8f65-41da-4de4-8968-e035b65339cf",
+      "members": [
+        {
+          "id": "user-rr",
+          "userPrincipalName": "reader@contoso.com",
+          "displayName": "Reader"
+        }
+      ]
+    }
+  ]
+}

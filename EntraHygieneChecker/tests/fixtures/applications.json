@@ -1,0 +1,150 @@
+{
+  "applications": [
+    {
+      "id": "cccccccc-0003-0003-0003-000000000001",
+      "appId": "11111111-aaaa-bbbb-cccc-000000000001",
+      "displayName": "Risky Automation App",
+      "passwordCredentials": [
+        {
+          "keyId": "pwd-expired",
+          "displayName": "old-secret",
+          "endDateTime": "2025-01-01T00:00:00Z"
+        },
+        {
+          "keyId": "pwd-soon",
+          "displayName": "rotating-secret",
+          "endDateTime": "2026-09-30T00:00:00Z"
+        },
+        {
+          "keyId": "pwd-ok",
+          "displayName": "long-lived",
+          "endDateTime": "2027-09-01T00:00:00Z"
+        }
+      ],
+      "keyCredentials": [
+        {
+          "keyId": "cert-soon",
+          "displayName": "cn=soon",
+          "endDateTime": "2026-10-01T00:00:00Z"
+        }
+      ],
+      "requiredResourceAccess": [
+        {
+          "resourceAppId": "00000003-0000-0000-c000-000000000000",
+          "resourceAccess": [
+            {
+              "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+              "type": "Role"
+            },
+            {
+              "id": "df021288-bdef-4463-88db-98f22de89214",
+              "type": "Role"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cccccccc-0003-0003-0003-000000000002",
+      "appId": "11111111-aaaa-bbbb-cccc-000000000002",
+      "displayName": "Clean Read-Only App",
+      "passwordCredentials": [
+        {
+          "keyId": "pwd-clean",
+          "displayName": "ok",
+          "endDateTime": "2027-12-01T00:00:00Z"
+        }
+      ],
+      "keyCredentials": [],
+      "requiredResourceAccess": [
+        {
+          "resourceAppId": "00000003-0000-0000-c000-000000000000",
+          "resourceAccess": [
+            {
+              "id": "df021288-bdef-4463-88db-98f22de89214",
+              "type": "Role"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "servicePrincipals": [
+    {
+      "id": "dddddddd-0004-0004-0004-000000000099",
+      "appId": "00000003-0000-0000-c000-000000000000",
+      "displayName": "Microsoft Graph",
+      "servicePrincipalType": "Application",
+      "accountEnabled": true
+    },
+    {
+      "id": "dddddddd-0004-0004-0004-000000000001",
+      "appId": "11111111-aaaa-bbbb-cccc-000000000001",
+      "displayName": "Risky Automation App",
+      "servicePrincipalType": "Application",
+      "accountEnabled": true
+    },
+    {
+      "id": "dddddddd-0004-0004-0004-000000000002",
+      "appId": "11111111-aaaa-bbbb-cccc-000000000003",
+      "displayName": "SP With RoleManagement",
+      "servicePrincipalType": "Application",
+      "accountEnabled": true
+    }
+  ],
+  "graphAppRoles": [
+    {
+      "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+      "value": "Directory.ReadWrite.All",
+      "displayName": "Directory.ReadWrite.All",
+      "isEnabled": true
+    },
+    {
+      "id": "9e3f62cf-ca93-4989-b6ce-bf83c28f9fe8",
+      "value": "RoleManagement.ReadWrite.Directory",
+      "displayName": "RoleManagement.ReadWrite.Directory",
+      "isEnabled": true
+    },
+    {
+      "id": "06b708a9-e830-4db3-a914-8e3965258c53",
+      "value": "AppRoleAssignment.ReadWrite.All",
+      "displayName": "AppRoleAssignment.ReadWrite.All",
+      "isEnabled": true
+    },
+    {
+      "id": "1bfefb4e-e292-4de0-8f4c-d997ad4b76be",
+      "value": "Application.ReadWrite.All",
+      "displayName": "Application.ReadWrite.All",
+      "isEnabled": true
+    },
+    {
+      "id": "df021288-bdef-4463-88db-98f22de89214",
+      "value": "User.Read.All",
+      "displayName": "User.Read.All",
+      "isEnabled": true
+    }
+  ],
+  "appRoleAssignments": [
+    {
+      "id": "assign-1",
+      "appRoleId": "9e3f62cf-ca93-4989-b6ce-bf83c28f9fe8",
+      "principalId": "dddddddd-0004-0004-0004-000000000002",
+      "principalDisplayName": "SP With RoleManagement",
+      "resourceId": "dddddddd-0004-0004-0004-000000000099"
+    },
+    {
+      "id": "assign-2",
+      "appRoleId": "06b708a9-e830-4db3-a914-8e3965258c53",
+      "principalId": "dddddddd-0004-0004-0004-000000000001",
+      "principalDisplayName": "Risky Automation App",
+      "resourceId": "dddddddd-0004-0004-0004-000000000099"
+    },
+    {
+      "id": "assign-3",
+      "appRoleId": "df021288-bdef-4463-88db-98f22de89214",
+      "principalId": "dddddddd-0004-0004-0004-000000000001",
+      "principalDisplayName": "Risky Automation App",
+      "resourceId": "dddddddd-0004-0004-0004-000000000099"
+    }
+  ]
+}
