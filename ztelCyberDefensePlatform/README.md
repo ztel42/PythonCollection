@@ -43,6 +43,9 @@ For authorized cybersecurity research and portfolio demos. Misuse on production 
 
 ## Changelog
 
+### Thu Sep 17, 2026 ET — Dependency security
+- Bump `requests==2.32.3` → `requests==2.33.0` for CVE-2024-47081 / prefer 2.33.0 (also CVE-2026-25645)
+
 ### 2026-09-07 — Security hardening
 - Default bind changed from `0.0.0.0` to `127.0.0.1` (`bind_host`)
 - Collector calls prefer HTTPS; cleartext HTTP requires `allow_insecure_http: true`
