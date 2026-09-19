@@ -8,6 +8,7 @@ Each folder is a straight copy of the original repository. Project code and file
 | --- | --- |
 | `EntraHygieneChecker` | *(new — lives in this collection)* https://github.com/ztel42/PythonCollection/tree/main/EntraHygieneChecker |
 | `FileIntegrityCheckerSHA256` | https://github.com/ztel42/FileIntegrityCheckerSHA256 |
+| `LinuxPersistenceAuditor` | *(new — lives in this collection)* https://github.com/ztel42/PythonCollection/tree/main/LinuxPersistenceAuditor |
 | `PythonCPUusageLogger` | https://github.com/ztel42/PythonCPUusageLogger |
 | `PythonSharePointAutoPull` | https://github.com/ztel42/PythonSharePointAutoPull |
 | `PythonSharePointLibraryAutoZip` | https://github.com/ztel42/PythonSharePointLibraryAutoZip |
