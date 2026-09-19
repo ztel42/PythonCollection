@@ -6,6 +6,7 @@ Each folder is a straight copy of the original repository. Project code and file
 
 | Project | Original repo |
 | --- | --- |
+| `AuthAnomalyDigester` | *(new — lives in this collection)* https://github.com/ztel42/PythonCollection/tree/main/AuthAnomalyDigester |
 | `EntraHygieneChecker` | *(new — lives in this collection)* https://github.com/ztel42/PythonCollection/tree/main/EntraHygieneChecker |
 | `FileIntegrityCheckerSHA256` | https://github.com/ztel42/FileIntegrityCheckerSHA256 |
 | `LinuxPersistenceAuditor` | *(new — lives in this collection)* https://github.com/ztel42/PythonCollection/tree/main/LinuxPersistenceAuditor |
