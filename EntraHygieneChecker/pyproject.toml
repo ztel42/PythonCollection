@@ -12,11 +12,11 @@ license = { text = "MIT" }
 authors = [{ name = "Zach Telford" }]
 dependencies = [
   "msal==1.31.1",
-  "requests==2.32.3",
+  "requests==2.33.0",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest==8.3.5"]
+dev = ["pytest==9.0.3"]
 
 [project.scripts]
 entra-hygiene = "entra_hygiene.cli:main"

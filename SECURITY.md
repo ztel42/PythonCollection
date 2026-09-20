@@ -18,3 +18,6 @@ This repository aims to keep:
 - Dependency pins kept current for known Critical/High CVEs
 
 Last aligned: Sat Sep 19, 2026 ET
+
+## Dependency updates
+- Sun Sep 20, 2026 ET — Dependabot: bump requests to 2.33.0 (CVE-2024-47081, CVE-2026-25645); bump pytest to >=9.0.3 (CVE-2025-71176)
