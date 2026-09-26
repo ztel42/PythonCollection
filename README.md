@@ -14,3 +14,7 @@ Most folders are copies of the original repositories. `FileIntegrityCheckerSHA25
 | `PythonSharePointAutoPull` | https://github.com/ztel42/PythonSharePointAutoPull |
 | `PythonSharePointLibraryAutoZip` | https://github.com/ztel42/PythonSharePointLibraryAutoZip |
 | `ztelCyberDefensePlatform` | https://github.com/ztel42/ztelCyberDefensePlatform |
+
+## Changelog
+
+- **Sat Sep 26, 2026 ET** — SharePoint hardening on `main` ([017c0c1](https://github.com/ztel42/PythonCollection/commit/017c0c1ca80fe428f7801ecf12727f8faca1dae7)): path traversal fix in `PythonSharePointLibraryAutoZip`; OData datetime validation in `PythonSharePointAutoPull`. See each folder’s `README.txt`.

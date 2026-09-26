@@ -19,9 +19,15 @@ Optional:
 Security notes
 - Never commit real client secrets. Use environment variables or a secret store.
 - Prefer app-only auth with least privilege. Do NOT disable MFA to unlock password auth.
+- Remote file and folder names are sanitized via safe_join (basename + containment under the temp dir) before local writes.
 
 
 Changelog
+2026-09-26 — Path traversal hardening (ET)
+- Added safe_join: reject empty/`.`/`..`, separators, and names that escape the download root
+- File and subfolder remote names now go through basename + resolve containment before write
+- Commit: https://github.com/ztel42/PythonCollection/commit/017c0c1ca80fe428f7801ecf12727f8faca1dae7
+
 2026-09-07 — Security hardening
 - Client ID, client secret, and site URL now come from required environment variables (no hardcoded secrets in source)
 - README documents secure app-only auth and explicitly avoids MFA-disable guidance
