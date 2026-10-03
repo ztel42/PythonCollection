@@ -41,6 +41,8 @@ def resolve_under_root(root: Optional[str], *parts: str) -> Optional[Path]:
         if not text:
             continue
         if text.startswith("/"):
+            # Restart at the base. Fixture mode re-roots absolute paths;
+            # live mode (root is None) restarts at filesystem root.
             segments = []
             text = text.lstrip("/")
         for comp in PurePosixPath(text).parts:
