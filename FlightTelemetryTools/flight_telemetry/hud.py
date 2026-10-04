@@ -92,7 +92,7 @@ def burn_hud(
     frames: List[TelemetryFrame],
     out: PathLike,
     *,
-    include_latlon: bool = True,
+    include_latlon: bool = False,
 ) -> Path:
     """Generate ASS from frames and burn into video with ffmpeg -vf ass=...
 
