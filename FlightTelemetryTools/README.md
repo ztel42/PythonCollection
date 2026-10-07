@@ -36,7 +36,7 @@ Optional recorded speed tags also accepted when present: `H.S …m/s`, `[h_spd: 
 ## Requirements
 
 - Python 3.10+ (**stdlib only** for parse / GPX / KML)
-- **ffmpeg** (+ ffprobe) for the `burn` HUD command only
+- **ffmpeg** (+ ffprobe) for the `burn` HUD command only — install via your OS package manager (`apt`, `brew`, `dnf`, …). The tool does **not** auto-install packages.
 - `pytest` for tests
 
 ---
@@ -89,7 +89,7 @@ pip install -r requirements.txt
 python -m pytest
 ```
 
-Fixtures under `tests/fixtures/` cover classic font-wrapped, bracket Mini-style, and GPS-function / H.S dialects, plus missing-GPS cues. The burn test generates a short silent lavfi MP4 (no drone footage required) and skips only if ffmpeg cannot be installed.
+Fixtures under `tests/fixtures/` cover classic font-wrapped, bracket Mini-style, and GPS-function / H.S dialects, plus missing-GPS cues. The burn test generates a short silent lavfi MP4 (no drone footage required) and skips if ffmpeg/ffprobe are not already on PATH.
 
 ---
 
@@ -120,6 +120,12 @@ FlightTelemetryTools/
 - **Estimated speed is approximate** (GPS noise, irregular cue timing). Prefer recorded `H.S` / `[h_spd]` when the dialect provides it.
 - HUD burn re-encodes video through ffmpeg; audio is copied when present.
 - Does not decrypt DJI flight logs (`.txt` / DAT) — only `.SRT` subtitles.
+
+---
+
+## Changelog
+
+- **Wed Oct 7, 2026 ET** — Removed silent `apt-get` auto-install of ffmpeg. HUD burn now errors clearly if ffmpeg/ffprobe are missing; install them yourself via your package manager.
 
 ---
 

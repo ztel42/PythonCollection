@@ -1,4 +1,4 @@
-"""HUD burn tests (skip only if ffmpeg truly unavailable after install attempt)."""
+"""HUD burn tests (skip if ffmpeg/ffprobe not on PATH)."""
 
 from __future__ import annotations
 
@@ -19,13 +19,15 @@ from flight_telemetry.parser import parse_srt_file
 
 @pytest.fixture(scope="module")
 def ffmpeg_ready() -> bool:
-    if ffmpeg_available():
-        return True
-    try:
+    return ffmpeg_available()
+
+
+def test_ensure_ffmpeg_missing(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(
+        "flight_telemetry.hud.shutil.which", lambda _name: None
+    )
+    with pytest.raises(RuntimeError, match="Install it with your package manager"):
         ensure_ffmpeg()
-        return ffmpeg_available()
-    except RuntimeError:
-        return False
 
 
 def test_ass_generation(bracket_srt: Path) -> None:
@@ -41,7 +43,7 @@ def test_burn_hud_on_generated_video(
     bracket_srt: Path, tmp_path: Path, ffmpeg_ready: bool
 ) -> None:
     if not ffmpeg_ready:
-        pytest.skip("ffmpeg could not be installed on this system")
+        pytest.skip("ffmpeg/ffprobe not available on PATH")
     video = make_silent_test_video(tmp_path / "src.mp4", duration_s=4.0)
     frames = parse_srt_file(bracket_srt)
     out = tmp_path / "hud.mp4"

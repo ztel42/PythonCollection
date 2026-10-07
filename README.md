@@ -19,6 +19,7 @@ Most folders are copies of the original repositories. `FileIntegrityCheckerSHA25
 
 ## Changelog
 
+- **Wed Oct 7, 2026 ET** — `FlightTelemetryTools`: removed silent apt-get auto-install of ffmpeg; HUD burn errors clearly if ffmpeg is missing. See that folder’s README.
 - **Wed Oct 7, 2026 ET** — Added `PreFlightGoNoGo`: METAR + NOAA Kp + sun times → FLY / MARGINAL / DON'T FLY. See that folder’s README.
 - **Sun Oct 4, 2026 ET** — Added `FlightTelemetryTools`: DJI `.SRT` → GPX/KML flight tracks and ffmpeg altitude/speed HUD burn. See that folder’s README.
 - **Sat Sep 26, 2026 ET** — SharePoint hardening on `main` ([017c0c1](https://github.com/ztel42/PythonCollection/commit/017c0c1ca80fe428f7801ecf12727f8faca1dae7)): path traversal fix in `PythonSharePointLibraryAutoZip`; OData datetime validation in `PythonSharePointAutoPull`. See each folder’s `README.txt`.

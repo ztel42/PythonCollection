@@ -18,25 +18,21 @@ def ffmpeg_available() -> bool:
 
 
 def ensure_ffmpeg() -> str:
-    """Return path to ffmpeg, attempting a package install if missing."""
+    """Return path to ffmpeg, or raise if it (or ffprobe) is not on PATH.
+
+    Does not install packages. Install ffmpeg and ffprobe via your OS
+    package manager, e.g. ``apt install ffmpeg``, ``brew install ffmpeg``,
+    or ``dnf install ffmpeg``.
+    """
     path = shutil.which("ffmpeg")
-    if path:
+    if path and shutil.which("ffprobe"):
         return path
-    # Best-effort install on this Linux box (Debian/Ubuntu style).
-    for cmd in (
-        ["apt-get", "update"],
-        ["apt-get", "install", "-y", "ffmpeg"],
-    ):
-        try:
-            subprocess.run(cmd, check=False, capture_output=True, timeout=180)
-        except (OSError, subprocess.TimeoutExpired):
-            break
-    path = shutil.which("ffmpeg")
-    if not path:
-        raise RuntimeError(
-            "ffmpeg is required for HUD burn but could not be found or installed"
-        )
-    return path
+    raise RuntimeError(
+        "ffmpeg is required for HUD burn but was not found on PATH. "
+        "Install it with your package manager "
+        "(e.g. apt install ffmpeg, brew install ffmpeg, dnf install ffmpeg) "
+        "and ensure both ffmpeg and ffprobe are available."
+    )
 
 
 def _fmt_speed(frame: TelemetryFrame) -> str:
