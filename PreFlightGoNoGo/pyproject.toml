@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "preflight-go-no-go"
+version = "0.1.0"
+description = "Pre-flight go/no-go: METAR, NOAA Kp, sun times → FLY / MARGINAL / DON'T FLY"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Zach Telford" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[project.scripts]
+preflight-go-no-go = "preflight_go_no_go.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["preflight_go_no_go*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
