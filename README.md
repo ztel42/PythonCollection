@@ -10,6 +10,7 @@ Most folders are copies of the original repositories. `FileIntegrityCheckerSHA25
 | `EntraHygieneChecker` | *(new — lives in this collection)* https://github.com/ztel42/PythonCollection/tree/main/EntraHygieneChecker |
 | `FileIntegrityCheckerSHA256` | https://github.com/ztel42/FileIntegrityCheckerSHA256 — upgraded in-collection (drag-drop, batch verify, live hash monitor; see folder README changelog 2026-09-20) |
 | `FlightTelemetryTools` | *(new — lives in this collection)* https://github.com/ztel42/PythonCollection/tree/main/FlightTelemetryTools |
+| `PreFlightGoNoGo` | *(new — lives in this collection)* https://github.com/ztel42/PythonCollection/tree/main/PreFlightGoNoGo |
 | `LinuxPersistenceAuditor` | *(new — lives in this collection)* https://github.com/ztel42/PythonCollection/tree/main/LinuxPersistenceAuditor |
 | `PythonCPUusageLogger` | https://github.com/ztel42/PythonCPUusageLogger |
 | `PythonSharePointAutoPull` | https://github.com/ztel42/PythonSharePointAutoPull |
@@ -18,6 +19,7 @@ Most folders are copies of the original repositories. `FileIntegrityCheckerSHA25
 
 ## Changelog
 
+- **Wed Oct 7, 2026 ET** — Added `PreFlightGoNoGo`: METAR + NOAA Kp + sun times → FLY / MARGINAL / DON'T FLY. See that folder’s README.
 - **Sun Oct 4, 2026 ET** — Added `FlightTelemetryTools`: DJI `.SRT` → GPX/KML flight tracks and ffmpeg altitude/speed HUD burn. See that folder’s README.
 - **Sat Sep 26, 2026 ET** — SharePoint hardening on `main` ([017c0c1](https://github.com/ztel42/PythonCollection/commit/017c0c1ca80fe428f7801ecf12727f8faca1dae7)): path traversal fix in `PythonSharePointLibraryAutoZip`; OData datetime validation in `PythonSharePointAutoPull`. See each folder’s `README.txt`.
 - **Sat Oct 3, 2026 ET** — `LinuxPersistenceAuditor`: `--root` scans reject symlink and path escapes (`..` and absolute paths that leave the fixture are not followed or read). See that folder’s README changelog.
