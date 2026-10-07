@@ -1,0 +1,68 @@
+[
+  {
+    "icaoId": "KXMR",
+    "receiptTime": "2026-10-07T14:00:00.000Z",
+    "reportTime": "2026-10-07T13:55:00.000Z",
+    "temp": 28,
+    "dewp": 18,
+    "wdir": 90,
+    "wspd": 8,
+    "visib": "10+",
+    "altim": 1015.2,
+    "wxString": null,
+    "rawOb": "KXMR 071355Z AUTO 09008KT 10SM FEW040 28/18 A2998",
+    "lat": 28.4674,
+    "lon": -80.5589,
+    "name": "Cape Kennedy AF Skid, FL, US",
+    "cover": "FEW",
+    "clouds": [
+      {
+        "cover": "FEW",
+        "base": 4000
+      }
+    ],
+    "fltCat": "VFR"
+  },
+  {
+    "icaoId": "KCOF",
+    "reportTime": "2026-10-07T13:55:00.000Z",
+    "temp": 29,
+    "dewp": 19,
+    "wdir": 100,
+    "wspd": 10,
+    "visib": "10+",
+    "rawOb": "KCOF 071355Z 10010KT 10SM SCT045 29/19 A2999",
+    "lat": 28.242,
+    "lon": -80.608,
+    "name": "Cocoa Beach/Patrick, FL, US",
+    "cover": "SCT",
+    "clouds": [
+      {
+        "cover": "SCT",
+        "base": 4500
+      }
+    ],
+    "fltCat": "VFR"
+  },
+  {
+    "icaoId": "KTTS",
+    "reportTime": "2026-10-07T13:55:00.000Z",
+    "temp": 27,
+    "dewp": 17,
+    "wdir": 80,
+    "wspd": 7,
+    "visib": 10,
+    "rawOb": "KTTS 071355Z 08007KT 10SM FEW050 27/17 A2997",
+    "lat": 28.5987,
+    "lon": -80.6816,
+    "name": "NASA Shuttle Landing Arpt, FL, US",
+    "cover": "FEW",
+    "clouds": [
+      {
+        "cover": "FEW",
+        "base": 5000
+      }
+    ],
+    "fltCat": "VFR"
+  }
+]

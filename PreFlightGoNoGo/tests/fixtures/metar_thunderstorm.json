@@ -1,0 +1,29 @@
+[
+  {
+    "icaoId": "KXMR",
+    "reportTime": "2026-10-07T20:00:00.000Z",
+    "temp": 24,
+    "dewp": 22,
+    "wdir": 270,
+    "wspd": 22,
+    "wgst": 34,
+    "visib": 2,
+    "wxString": "TSRA BR",
+    "rawOb": "KXMR 072000Z 27022G34KT 2SM TSRA BR BKN008 OVC020 24/22 A2970",
+    "lat": 28.4674,
+    "lon": -80.5589,
+    "name": "Cape Kennedy AF Skid, FL, US",
+    "cover": "OVC",
+    "clouds": [
+      {
+        "cover": "BKN",
+        "base": 800
+      },
+      {
+        "cover": "OVC",
+        "base": 2000
+      }
+    ],
+    "fltCat": "IFR"
+  }
+]
