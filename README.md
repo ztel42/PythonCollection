@@ -19,6 +19,7 @@ Most folders are copies of the original repositories. `FileIntegrityCheckerSHA25
 
 ## Changelog
 
+- **Sun Nov 1, 2026 ET** — `FlightTelemetryTools`, `PreFlightGoNoGo`: test floor raised to `pytest>=9.0.3`. Dependabot now covers `FileIntegrityCheckerSHA256`, `FlightTelemetryTools` and `PreFlightGoNoGo` (weekly pip). See each folder’s README.
 - **Wed Oct 7, 2026 ET** — `FlightTelemetryTools`: removed silent apt-get auto-install of ffmpeg; HUD burn errors clearly if ffmpeg is missing. See that folder’s README.
 - **Wed Oct 7, 2026 ET** — Added `PreFlightGoNoGo`: METAR + NOAA Kp + sun times → FLY / MARGINAL / DON'T FLY. See that folder’s README.
 - **Sun Oct 4, 2026 ET** — Added `FlightTelemetryTools`: DJI `.SRT` → GPX/KML flight tracks and ffmpeg altitude/speed HUD burn. See that folder’s README.

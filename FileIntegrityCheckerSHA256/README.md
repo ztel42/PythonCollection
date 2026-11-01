@@ -22,6 +22,10 @@ Core hashing, batch verification, and the live monitor live in `integrity_core.p
 
 ---
 
+## Changelog (Sun Nov 1, 2026 ET)
+
+- Added this project to the repo's `.github/dependabot.yml` (weekly pip updates for `requirements.txt`).
+
 ## Changelog (2026-09-20)
 
 ### Added

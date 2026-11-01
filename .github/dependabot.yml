@@ -13,7 +13,25 @@ updates:
       day: "monday"
     open-pull-requests-limit: 5
   - package-ecosystem: "pip"
+    directory: "/FileIntegrityCheckerSHA256"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "pip"
+    directory: "/FlightTelemetryTools"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "pip"
     directory: "/LinuxPersistenceAuditor"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "pip"
+    directory: "/PreFlightGoNoGo"
     schedule:
       interval: "weekly"
       day: "monday"
