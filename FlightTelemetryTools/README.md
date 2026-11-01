@@ -125,6 +125,8 @@ FlightTelemetryTools/
 
 ## Changelog
 
+- **Sun Nov 1, 2026 ET** — Raised the test dependency floor to `pytest>=9.0.3` in `requirements.txt` and `pyproject.toml` (older pytest has a known flaw). Added to Dependabot (weekly pip). Tests pass (17).
+
 - **Wed Oct 7, 2026 ET** — Removed silent `apt-get` auto-install of ffmpeg. HUD burn now errors clearly if ffmpeg/ffprobe are missing; install them yourself via your package manager.
 
 ---

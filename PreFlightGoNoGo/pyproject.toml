@@ -13,7 +13,7 @@ authors = [{ name = "Zach Telford" }]
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0.0"]
+dev = ["pytest>=9.0.3"]
 
 [project.scripts]
 preflight-go-no-go = "preflight_go_no_go.cli:main"

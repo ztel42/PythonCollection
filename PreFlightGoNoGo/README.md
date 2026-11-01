@@ -138,4 +138,6 @@ Tests use **offline fixtures** under `tests/fixtures/` and mock HTTP. No live ne
 
 ## Changelog
 
+- **Sun Nov 1, 2026 ET** — Raised the test dependency floor to `pytest>=9.0.3` in `requirements.txt` and `pyproject.toml` (older pytest has a known flaw). Added to Dependabot (weekly pip). Tests pass (25).
+
 - **Wed Oct 7, 2026 ET** — Initial release: METAR (aviationweather.gov), Kp (NOAA SWPC), sun/golden hour, FLY/MARGINAL/DON'T FLY scoring, CLI dashboard + JSON, offline fixtures/tests.
