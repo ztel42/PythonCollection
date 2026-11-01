@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest==9.0.3"]
+dev = ["pytest==9.2.0"]
 
 [project.scripts]
 entra-hygiene = "entra_hygiene.cli:main"
